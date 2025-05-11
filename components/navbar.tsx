@@ -20,7 +20,7 @@ import Image from "next/image";
 export const Navbar = () => {
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
-      <NavbarBrand as="li" className="gap-3 max-w-fit">
+      <NavbarBrand as="li" className="gap-3 max-w-fit "role="presentation">
         <NextLink className="flex justify-start items-center gap-1" href="/">
           <Image src="/images/triads.png" alt="Brand Logo" width={80} height={40} />
         </NextLink>
@@ -49,7 +49,7 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-            <Link href="/login"><Button  className="bg-[#6c9b3c]">Login</Button></Link>
+            <Link href="/login" role=""><Button  className="bg-[#6c9b3c]">Login</Button></Link>
             <Link href="/signup"><Button className="bg-[#6c9b3c]">Sign up</Button></Link>
           <ThemeSwitch />
         </NavbarItem>
